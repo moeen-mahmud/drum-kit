@@ -1,5 +1,5 @@
 /**
- *
+ * Functionality for getting the audio queue depending the keys
  */
 window.addEventListener("keydown", (e) => {
   const audio = document.querySelector(`audio[data-key="${e.key}"]`);
@@ -10,6 +10,9 @@ window.addEventListener("keydown", (e) => {
   key.classList.add("playing");
 });
 
+/**
+ * For remove the transition class
+ */
 const keys = document.querySelectorAll(".key");
 keys.forEach((key) => {
   key.addEventListener("transitionend", (e) => {
