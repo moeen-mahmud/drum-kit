@@ -20,29 +20,21 @@ h1 {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .keys {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2% 33%;
   place-items: center;
   gap: 1rem;
 }
 
-/* .keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-} */
-
 .key {
-  /* border: 0.4rem solid #1c1c1d; */
   border-radius: 0.5rem;
-  /* margin: 1rem; */
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
@@ -67,6 +59,18 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  /* color: #ffc600; */
   color: #1c1c1d;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 669px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .key {
+    width: 5rem;
+  }
+
+  kbd {
+    font-size: 2rem;
+  }
 }
