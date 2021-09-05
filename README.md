@@ -25,7 +25,7 @@ User should be able to create different drum sound by pressing the mentioned key
 ![Desktop View](./screenshot/drum-kit.png)
 
 - Solution URL: [Git Repo](https://github.com/moeen-mahmud/drum-kit)
-- Live Site URL: [Live Site](https://sportsdb-api-js.vercel.app/)
+- Live Site URL: [Live Site](https://drum-kit-mu.vercel.app/)
 
 ## My Process
 
@@ -64,4 +64,4 @@ This project is inspired from [Wes Bos's 30 JavaScript](https://javascript30.com
 
 ## Acknowledgement
 
-A huge thanks to [Wes Bos's](https://javascript30.com/).
+A huge thanks to [Wes Bos](https://javascript30.com/).
