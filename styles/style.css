@@ -1,46 +1,65 @@
-html {
-  font-size: 10px;
-  background: url("/background.jpg") bottom center;
-  background-size: cover;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar+One&display=swap");
 
-body,
-html {
+* {
+  font-size: 14px;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+  min-height: 100vh;
+  background-color: #6300e2;
+  color: #fff7ff;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Sigmar One", cursive;
+  text-align: center;
 }
 
 .keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2% 33%;
+  place-items: center;
+  gap: 1rem;
+}
+
+/* .keys {
   display: flex;
   flex: 1;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+} */
 
 .key {
-  border: 0.4rem solid black;
+  /* border: 0.4rem solid #1c1c1d; */
   border-radius: 0.5rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 0.5rem black;
+  color: #f0f0f0;
+  box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);
 }
-
 .playing {
   transform: scale(0.9);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #f0f0f0;
+  box-shadow: 0 0 1rem #f0f0f0;
 }
 
 kbd {
   display: block;
+  font-family: "Sigmar One", cursive;
   font-size: 4rem;
 }
 
@@ -48,5 +67,6 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  /* color: #ffc600; */
+  color: #1c1c1d;
 }
